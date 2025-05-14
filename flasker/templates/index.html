@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>とーるアプリ</title>
+    </head>
+    <body>
+        <h1>とーる書店</h1>
+        <h2>今月の新刊一覧</h2>
+        {% for book in books %}
+            <p>タイトル: {{book.title}}</p>
+            <p>金額: {{book.price}}円</p>
+            <p>入荷日: {{book.arrival_day}}</p>
+        {% endfor %}
+    </body>
+</html>
