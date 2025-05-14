@@ -8,11 +8,11 @@ def index():
         {'title': 'はらぺこリン',
         'price': '1200',
         'arrival_day': '2020/7/9'},
-        {'title': 'ハリーポッターハリーポッター',
+        {'title': 'ハリーポッター',
         'price': '2500',
         'arrival_day': '2020/12/12'}
     ]
-    return render_template("index.html",book=books)
+    return render_template("index.html",books=books)
 
 
 if __name__ == '__main__':
